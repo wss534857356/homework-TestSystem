@@ -1,1 +1,1 @@
-export const LOGIN_URL = 'http://119.29.40.41/fishPond/user/userLogin.php'
+export const LOGIN_URL = 'http://localhost:8088/Examonline/servlet/Login'

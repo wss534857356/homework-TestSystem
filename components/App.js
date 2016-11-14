@@ -25,16 +25,15 @@ class App extends Component {
     } = this.props;
     return (
       <div>
-        <AppBar iconElementLeft={
-          <p style={{
-            margin: 0,
-            color: '#FFF',
-            lineHeight: '48px'}}>
-            紫金考试系统
-          </p>}>
-          Links:
-          {' '}
-          <Link to="/home">Home</Link>
+        <AppBar 
+          iconElementLeft={
+            <p style={{margin: 0,color: '#FFF', lineHeight: '48px'}}>
+              紫金考试系统
+            </p>}
+          iconElementRight={
+            <span style={{color: '#FFF', lineHeight: '48px'}}>
+              <FlatButton label="Home" style={{color: '#FFF'}}></FlatButton>
+            </span>}>
         </AppBar>
         <div style={{ marginTop: '1.5em' }}>
           <Button width= '20%' onClick={()=>browserHistory.push('/home')}>跳转</Button>
